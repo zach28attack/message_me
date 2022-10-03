@@ -5,8 +5,8 @@
 </h4>
 
 <div class = "ui two column grid">
-
-    <div class = " four wide column">
+    
+    <div class = "four wide column">
         <div class="ui fluid raised card chatbox">
             <div class="content">
                 <div class="ui inverted vertical menu">
@@ -26,36 +26,12 @@
     
     <div class = " twelve wide column">
         <div class="ui fluid raised card chatbox">
+
             <div class="content">
                 <div class="ui feed">
-                    <div class="event">
-                        <div class="content">
-                            <div class="summary">
-                                <em>Christian Rocha</em>:TEST MESSAGE
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <div class="content">
-                            <div class="summary">
-                                <em>Christian Rocha</em>:TEST MESSAGE
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <div class="content">
-                            <div class="summary">
-                                <em>Christian Rocha</em>:TEST MESSAGE
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event">
-                        <div class="content">
-                            <div class="summary">
-                                <em>Christian Rocha</em>:TEST MESSAGE
-                            </div>
-                        </div>
-                    </div>
+                    <%@messages.each do |m|%>
+                        <%= m.body %></br>
+                    <%end%>
                 </div>
             </div>
             <div class="extra content">
