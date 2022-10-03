@@ -29,11 +29,20 @@
 
             <div class="content">
                 <div class="ui feed">
+                
                     <%@messages.each do |m|%>
-                        <%= m.body %></br>
+                        <div class="event">
+                            <div class="content">
+                                <div class="summary">
+                                    <%= m.user.username%>:
+                                    <%= m.body %></br>
+                                </div>
+                            </div>
+                        </div>
                     <%end%>
                 </div>
             </div>
+
             <div class="extra content">
             <form class="ui reply form">
                 <div class="field">
