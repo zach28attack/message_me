@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy'
   post 'message', to: 'messages#create'
 
-  mount ActionCable.server, at: '/cable'
+  mount ActionCable.server => '/cable'
 
 end
